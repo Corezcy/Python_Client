@@ -1,5 +1,8 @@
+#absl库下面的四个模块
 from absl import app
 from absl import flags
+from absl import testing
+from absl import logging
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string("name", None, "Your name.")
@@ -16,4 +19,4 @@ def main(argv):
 
 
 if __name__ == '__main__':
-  app.run(main)
+    app.run(main)
