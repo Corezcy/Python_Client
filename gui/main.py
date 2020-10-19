@@ -1,14 +1,32 @@
 from gui.logger import LoggerInstance
 from absl import flags
 from absl import app
+import logging
+from absl import logging as absl_logging
 
-# FLAGS = flags.FLAGS
-# flags.DEFINE_string("name", None, "Your name.")
-# flags.DEFINE_integer("num_times", 1,
-#                      "Number of times to print greeting.")
+log = LoggerInstance()
 
-def main(log):
-    # print(FLAGS.name)
+FLAGS = flags.FLAGS
+flags.DEFINE_string("name", None, "Your name.")
+flags.mark_flag_as_required("name")
+
+def chooseTheScene():
+    pass
+
+
+def startSimulation():
+    pass
+
+
+def checkReport():
+    pass
+
+
+def main(args):
+    print(FLAGS.name)
+
+    logging.root.removeHandler(absl_logging.get_absl_handler())
+
     print("*---------Welcome to Python Client!----------*")
     print("|                 --Menu--                   |")
     print("|              1.Choose the Scene            |")
@@ -19,18 +37,33 @@ def main(log):
     choice = input("Please give your choice :")
     while choice != "4":
         if choice == "1":
-            log.info("1")
+            '''
+            选择场景
+            '''
+            log.info("Please choose the scene")
+            chooseTheScene()
+            log.info("The scene is choosed")
         elif choice == "2":
-            log.info("2")
+            '''
+            开始仿真
+            '''
+            log.info("Simulation is starting")
+            startSimulation()
+            log.info("Simulation is finished")
         elif choice == "3":
+            '''
+            查看报告
+            '''
+            print()
+            checkReport()
             log.info("3")
         else:
-            pass
+            log.warning("Invalid input")
         choice = input("Please give your choice :")
+
     print("bye")
 
 
 if __name__ == '__main__':
-    log = LoggerInstance()
-    app.run(main(log))
-
+    flags_parser = [[['--name=zcy']]]
+    app.run(main,flags_parser=flags_parser)

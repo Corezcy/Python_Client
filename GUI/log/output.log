@@ -1,9 +1,43 @@
-2020-10-19 20:17:30,989 - PyClient - absl - INFO - 1
-2020-10-19 20:17:32,109 - PyClient - absl - INFO - 1
-2020-10-19 20:17:33,027 - PyClient - absl - INFO - 1
-2020-10-19 20:17:33,776 - PyClient - absl - INFO - 1
-2020-10-19 20:17:34,393 - PyClient - absl - INFO - 1
-2020-10-19 20:17:34,968 - PyClient - absl - INFO - 1
-2020-10-19 20:17:35,448 - PyClient - absl - INFO - 1
-2020-10-19 20:20:59,536 - PyClient - absl - INFO - 1
-2020-10-19 20:21:51,535 - PyClient - absl - INFO - 1
+2020-10-19 22:35:57,994 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:35:57,994 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:35:59,466 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:35:59,466 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:36:00,111 - PyClient - absl - INFO - 3
+2020-10-19 22:36:20,626 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:36:20,626 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:36:21,363 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:36:21,363 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:36:21,810 - PyClient - absl - INFO - 3
+2020-10-19 22:36:54,980 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:36:54,981 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:36:55,716 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:36:55,717 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:36:56,214 - PyClient - absl - INFO - 3
+2020-10-19 22:41:32,809 - PyClient - absl - WARNING - Invalid input
+2020-10-19 22:41:34,088 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:41:34,088 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:41:34,935 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:41:34,935 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:41:38,561 - PyClient - absl - INFO - 3
+2020-10-19 22:45:45,583 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:45:45,585 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:45:46,661 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:45:46,661 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:45:57,196 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:45:57,196 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:45:57,773 - PyClient - absl - INFO - 3
+2020-10-19 22:46:03,136 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:46:03,136 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:46:03,472 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:46:03,472 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:46:03,779 - PyClient - absl - INFO - 3
+2020-10-19 22:47:02,034 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:47:02,035 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:47:02,911 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:47:02,911 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:47:03,759 - PyClient - absl - INFO - 3
+2020-10-19 22:49:14,668 - PyClient - absl - INFO - Please choose the scene
+2020-10-19 22:49:14,669 - PyClient - absl - INFO - The scene is choosed
+2020-10-19 22:49:15,652 - PyClient - absl - INFO - Simulation is starting
+2020-10-19 22:49:15,658 - PyClient - absl - INFO - Simulation is finished
+2020-10-19 22:49:16,247 - PyClient - absl - INFO - 3
