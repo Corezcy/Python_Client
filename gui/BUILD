@@ -6,6 +6,6 @@ py_library(
 
 py_binary(
   name = "main",
-  deps = [:logger],
+  deps = [":logger"],
   srcs = ["main.py"],
 )

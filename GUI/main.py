@@ -30,6 +30,7 @@ def main(log):
     print("bye")
 
 
+
 if __name__ == '__main__':
     log = LoggerInstance()
     app.run(main(log))
