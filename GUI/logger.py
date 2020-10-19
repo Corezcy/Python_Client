@@ -1,27 +1,22 @@
 from absl import logging as absl_logging
+import logging
 
-class LoggerInstance:
+class LoggerInstance():
     logger = None
 
-    def __init__(self) -> None:
+    def __init__(self) :
 
         self.logger = absl_logging.get_absl_logger()
-        self.logger.setLevel(absl_logging.DEBUG)
-
-        # 控制日志输出到控制台
-        logging_stream_handler = absl_logging.get_absl_handler()
-        logging_stream_handler.setLevel(absl_logging.DEBUG)
-
-
+        self.logger.setLevel(absl_logging.FATAL)
         # 控制日志输出到文件
-        file_handler_all = absl_logging.get_absl_handler()
-        file_handler_all.use_absl_log_file('loghaha.log')
+
+        file_handler_all = logging.FileHandler('./log/output.log')
         file_handler_all.setLevel(absl_logging.DEBUG)
 
-        logging_stream_handler.setFormatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        file_handler_all.setFormatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter('%(asctime)s - PyClient - %(name)s - %(levelname)s - %(message)s')
 
-        self.logger.addHandler(logging_stream_handler)
+        file_handler_all.setFormatter(formatter)
+
         self.logger.addHandler(file_handler_all)
 
     def info(self, message):
