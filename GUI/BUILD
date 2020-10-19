@@ -1,5 +1,11 @@
-py_binary(
-  name = "test_bazel_and_absl",
+py_library(
+  name = "logger",
   deps = [],
-  srcs = ["test_bazel_and_absl.py"],
+  srcs = ["logger.py"],
+)
+
+py_binary(
+  name = "main",
+  deps = [":logger"],
+  srcs = ["main.py"],
 )
