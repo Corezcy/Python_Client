@@ -54,9 +54,8 @@ def main(args):
             '''
             查看报告
             '''
-            print()
+            log.info("Please check the report")
             checkReport()
-            log.info("3")
         else:
             log.warning("Invalid input")
         choice = input("Please give your choice :")
@@ -65,5 +64,4 @@ def main(args):
 
 
 if __name__ == '__main__':
-    flags_parser = [[['--name=zcy']]]
-    app.run(main,flags_parser=flags_parser)
+    app.run(main)

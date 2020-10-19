@@ -24,10 +24,11 @@ class LoggerInstance():
         bazel以workspace文件为根目录
         python以main文件所在的文件夹为根目录
         '''
-        ## bazel目录
+        # bazel目录
         # file_handler_all = logging.FileHandler('./gui/log/output.log')
         # python run目录
         file_handler_all = logging.FileHandler('./log/output.log')
+
         file_handler_all.setLevel(absl_logging.DEBUG)
 
         formatter = logging.Formatter(
