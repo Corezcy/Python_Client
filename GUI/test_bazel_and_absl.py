@@ -1,4 +1,4 @@
-#absl库下面的四个模块
+# absl库下面的四个模块
 from absl import app
 from absl import flags
 
@@ -10,10 +10,11 @@ flags.DEFINE_integer("num_times", 1,
 # Required flag.
 flags.mark_flag_as_required("name")
 
+
 def main(argv):
-  del argv  # Unused.
-  for i in range(0, FLAGS.num_times):
-    print('Hello, %s!' % FLAGS.name)
+    del argv  # Unused.
+    for i in range(0, FLAGS.num_times):
+        print('Hello, %s!' % FLAGS.name)
 
 
 if __name__ == '__main__':
