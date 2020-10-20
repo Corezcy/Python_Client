@@ -197,9 +197,8 @@ class EgoVehicle(Vehicle):
     self.simulator._add_callback(self, "custom", fn)
 
   #this function is added by sunjianlei
-  def destination_reached(self, fn):
-    self.remote.command("agent/destination_reached", {"uid": self.uid})
-    self.simulator._add_callback(self, "destination_reached", fn)
+  def destination_set(self,destination=None):
+    self.remote.command("agent/destination_set", {"uid": self.uid,"destination":destination.to_json()}) 
 
 
 class NpcVehicle(Vehicle):
