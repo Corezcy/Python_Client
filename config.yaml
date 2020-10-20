@@ -1,6 +1,10 @@
 configuration:
     MongoDB:
+        #数据库名
         database: 'mydb'
+        #集合名
         collection: 'test'
+        #被连接服务器的IP
         host: '10.78.6.36'
+        #端口，默认27017
         port: 27017
