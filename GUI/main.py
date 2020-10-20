@@ -1,28 +1,22 @@
-from gui.logger import LoggerInstance
 from absl import flags
 from absl import app
 import logging
 from absl import logging as absl_logging
 
+from gui.choose_the_scene import chooseTheScene
+from gui.check_report import checkReport
+from gui.start_simulation import startSimulation
+from gui.logger import LoggerInstance
+
+
 log = LoggerInstance()
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string("name", None, "Your name.")
-flags.mark_flag_as_required("name")
-
-def chooseTheScene():
-    pass
-
-
-def startSimulation():
-    pass
-
-
-def checkReport():
-    pass
 
 
 def main(args):
+
     print(FLAGS.name)
 
     logging.root.removeHandler(absl_logging.get_absl_handler())
@@ -41,21 +35,20 @@ def main(args):
             选择场景
             '''
             log.info("Please choose the scene")
-            chooseTheScene()
-            log.info("The scene is choosed")
+            chooseTheScene(log)
         elif choice == "2":
             '''
-            开始仿真
+            开始仿真(加入暂停功能)
             '''
             log.info("Simulation is starting")
-            startSimulation()
+            startSimulation(log)
             log.info("Simulation is finished")
         elif choice == "3":
             '''
             查看报告
             '''
             log.info("Please check the report")
-            checkReport()
+            checkReport(log)
         else:
             log.warning("Invalid input")
         choice = input("Please give your choice :")
@@ -64,4 +57,5 @@ def main(args):
 
 
 if __name__ == '__main__':
+    # app.run(main,argv=['program_name', '--name=tom'])
     app.run(main)
