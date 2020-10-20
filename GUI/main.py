@@ -1,7 +1,7 @@
 from absl import flags
 from absl import app
-import logging
 from absl import logging as absl_logging
+import logging
 
 from gui.choose_the_scene import chooseTheScene
 from gui.check_report import checkReport
@@ -12,16 +12,14 @@ from gui.logger import LoggerInstance
 log = LoggerInstance()
 
 FLAGS = flags.FLAGS
-flags.DEFINE_string("name", None, "Your name.")
+flags.DEFINE_string("int", None, "choice")
 
 
 def main(args):
 
-    print(FLAGS.name)
-
     logging.root.removeHandler(absl_logging.get_absl_handler())
 
-    print("*---------Welcome to Python Client!----------*")
+    print("*---------Welcome to Pythonx  Client!----------*")
     print("|                 --Menu--                   |")
     print("|              1.Choose the Scene            |")
     print("|              2.Start Simulation            |")
@@ -29,6 +27,7 @@ def main(args):
     print("|              4.Exit                        |")
     print("*--------------------------------------------*")
     choice = input("Please give your choice :")
+    # choice = FLAGS.int
     while choice != "4":
         if choice == "1":
             '''
@@ -51,11 +50,12 @@ def main(args):
             checkReport(log)
         else:
             log.warning("Invalid input")
-        choice = input("Please give your choice :")
+
+        #choice = input("Please give your choice :")
 
     print("bye")
 
 
 if __name__ == '__main__':
-    # app.run(main,argv=['program_name', '--name=tom'])
+    # app.run(main,argv=['program_name', '--int=1'])
     app.run(main)
