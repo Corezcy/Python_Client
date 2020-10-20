@@ -8,3 +8,6 @@ configuration:
         host: '10.78.6.36'
         #端口，默认27017
         port: 27017
+    Simulation:
+        host: '10.78.4.163'
+        port: '9192'
