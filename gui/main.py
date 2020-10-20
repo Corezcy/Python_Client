@@ -1,28 +1,22 @@
-from gui.logger import LoggerInstance
 from absl import flags
 from absl import app
 import logging
 from absl import logging as absl_logging
 
+from gui.choose_the_scene import chooseTheScene
+from gui.check_report import checkReport
+from gui.start_simulation import startSimulation
+from gui.logger import LoggerInstance
+
+
 log = LoggerInstance()
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string("name", None, "Your name.")
-flags.mark_flag_as_required("name")
-
-def chooseTheScene():
-    pass
-
-
-def startSimulation():
-    pass
-
-
-def checkReport():
-    pass
 
 
 def main(args):
+
     print(FLAGS.name)
 
     logging.root.removeHandler(absl_logging.get_absl_handler())
@@ -39,24 +33,24 @@ def main(args):
         if choice == "1":
             '''
             选择场景
+            1.连接mongodb
             '''
             log.info("Please choose the scene")
-            chooseTheScene()
+            chooseTheScene(log)
             log.info("The scene is choosed")
         elif choice == "2":
             '''
-            开始仿真
+            开始仿真(加入暂停功能)
             '''
             log.info("Simulation is starting")
-            startSimulation()
+            startSimulation(log)
             log.info("Simulation is finished")
         elif choice == "3":
             '''
             查看报告
             '''
-            print()
-            checkReport()
-            log.info("3")
+            log.info("Please check the report")
+            checkReport(log)
         else:
             log.warning("Invalid input")
         choice = input("Please give your choice :")
@@ -65,5 +59,5 @@ def main(args):
 
 
 if __name__ == '__main__':
-    flags_parser = [[['--name=zcy']]]
-    app.run(main,flags_parser=flags_parser)
+    # app.run(main,argv=['program_name', '--name=tom'])
+    app.run(main)

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1e7152c-07ed-45b3-8691-6d20fdff75a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GUI/check_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/choose_the_scene.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/start_simulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lgsvl/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lgsvl/dreamview/BUILD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/log/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/log/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/logger.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j4uNF8btf3lHxNz5tl0qLFMHl5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gui" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="choose_the_scene" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_Client" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/choose_the_scene.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_Client" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_bazel_and_absl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_Client" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/test_bazel_and_absl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.choose_the_scene" />
+        <item itemvalue="Python.test_bazel_and_absl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1e7152c-07ed-45b3-8691-6d20fdff75a1" name="Default Changelist" comment="" />
+      <created>1603075643445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603075643445</updated>
+      <workItem from="1603075646559" duration="725000" />
+      <workItem from="1603076655885" duration="20185000" />
+      <workItem from="1603110479444" duration="213000" />
+      <workItem from="1603110717175" duration="62000" />
+      <workItem from="1603110800859" duration="53000" />
+      <workItem from="1603110873228" duration="9629000" />
+      <workItem from="1603121672859" duration="51000" />
+      <workItem from="1603153016615" duration="6386000" />
+    </task>
+    <task id="LOCAL-00001" summary="测试bazel和absl-py库的正常使用">
+      <created>1603079047294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603079047294</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1603096962809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603096962809</updated>
+    </task>
+    <task id="LOCAL-00003" summary="改变了BUILD文件中未带引号的错误">
+      <created>1603110219461</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603110219462</updated>
+    </task>
+    <task id="LOCAL-00004" summary="使用absl-logging定向日志到文件；取消控制台显示">
+      <created>1603110332127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603110332128</updated>
+    </task>
+    <task id="LOCAL-00005" summary="导入了absl-log">
+      <created>1603110370919</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603110370919</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit">
+      <created>1603110462373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603110462373</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit">
+      <created>1603111320277</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603111320277</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit">
+      <created>1603118254644</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603118254644</updated>
+    </task>
+    <task id="LOCAL-00009" summary="解决了控制台多输出的问题(通过logging.root.removeHandler)">
+      <created>1603120325652</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603120325652</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit">
+      <created>1603121146375</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603121146375</updated>
+    </task>
+    <task id="LOCAL-00011" summary="解决了控制台多输出的问题(通过logging.root.removeHandler)">
+      <created>1603121577356</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603121577356</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="测试bazel和absl-py库的正常使用" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="改变了BUILD文件中未带引号的错误" />
+    <MESSAGE value="使用absl-logging定向日志到文件；取消控制台显示" />
+    <MESSAGE value="引入absl-log" />
+    <MESSAGE value="导入了absl-log" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="解决了控制台多输出的问题(通过logging.root.removeHandler)" />
+    <MESSAGE value="增加了配置文件" />
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="78" key="#Notifications" timestamp="1603171068747">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="78" key="#Notifications/0.23.1280.777@0.23.1280.777" timestamp="1603171068747" />
+    <state x="355" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603077434191">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="355" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1603077434191" />
+    <state x="453" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1603091055739">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="453" y="136" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1603091055739" />
+    <state x="232" y="23" key="CommitChangelistDialog2" timestamp="1603171219061">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="232" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1603171219061" />
+    <state x="499" y="316" width="509" height="297" key="Github.ShareDialog" timestamp="1603096766701">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="499" y="316" width="509" height="297" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1603096766701" />
+    <state width="1238" height="313" key="GridCell.Tab.0.bottom" timestamp="1603170688697">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1603170688697" />
+    <state width="1238" height="313" key="GridCell.Tab.0.center" timestamp="1603170688696">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1603170688696" />
+    <state width="1238" height="313" key="GridCell.Tab.0.left" timestamp="1603170688695">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1603170688695" />
+    <state width="1238" height="313" key="GridCell.Tab.0.right" timestamp="1603170688696">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1603170688696" />
+    <state width="1238" height="313" key="GridCell.Tab.1.bottom" timestamp="1603170688698">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1603170688698" />
+    <state width="1238" height="313" key="GridCell.Tab.1.center" timestamp="1603170688697">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1603170688697" />
+    <state width="1238" height="313" key="GridCell.Tab.1.left" timestamp="1603170688697">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1603170688697" />
+    <state width="1238" height="313" key="GridCell.Tab.1.right" timestamp="1603170688698">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="313" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1603170688698" />
+    <state x="228" y="155" key="IDE.errors.dialog" timestamp="1603105927586">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="228" y="155" key="IDE.errors.dialog/0.23.1280.777@0.23.1280.777" timestamp="1603105927586" />
+    <state x="149" y="50" key="SettingsEditor" timestamp="1603121136310">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1603121136310" />
+    <state x="240" y="153" key="Vcs.Push.Dialog.v2" timestamp="1603121578875">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="153" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1603121578875" />
+    <state x="429" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603119543700">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="429" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1603119543700" />
+    <state x="213" y="142" width="853" height="538" key="find.popup" timestamp="1603094077167">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="213" y="142" width="853" height="538" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1603094077167" />
+    <state x="383" y="211" key="git4idea.merge.GitMergeDialog" timestamp="1603171003655">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="383" y="211" key="git4idea.merge.GitMergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1603171003655" />
+    <state x="296" y="211" key="git4idea.merge.GitPullDialog" timestamp="1603076149249">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="296" y="211" key="git4idea.merge.GitPullDialog/0.23.1280.777@0.23.1280.777" timestamp="1603076149249" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_Client$choose_the_scene.coverage" NAME="choose_the_scene Coverage Results" MODIFIED="1603157037326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/python_Client$test_bazel_and_absl.coverage" NAME="test_bazel_and_absl Coverage Results" MODIFIED="1603153343090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/python_Client$main.coverage" NAME="main Coverage Results" MODIFIED="1603170551037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+  </component>
+</project>

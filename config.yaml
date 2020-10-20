@@ -1,0 +1,4 @@
+configuration:
+    MongoDB:
+        host: '10.78.6.36'
+        port: 27017
