@@ -1,10 +1,17 @@
-import pymongo as mongo
-
-
-client = mongo.MongoClient(host='0.0.0.0', port=27017)
-db = client.mydb
-collection = db.test
 
 
 def checkReport(log):
+
+    '''
+    打开文件
+    在终端显示文件
+    '''
+    with open('./report/test.txt', 'r') as f:
+        print(f.read())
+
+
     pass
+
+
+
+checkReport(None)

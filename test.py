@@ -1,0 +1,6 @@
+
+
+
+
+str = ""
+print(str == None)

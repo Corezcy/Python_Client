@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c1e7152c-07ed-45b3-8691-6d20fdff75a1" name="Default Changelist" comment="initial">
       <change beforePath="$PROJECT_DIR$/GUI/BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/BUILD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/check_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/check_report.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/choose_the_scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/choose_the_scene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/json/05.View.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/log/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/log/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/scenario_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/scenario_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/start_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/start_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lgsvl/BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/lgsvl/BUILD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lgsvl/dreamview/BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/lgsvl/dreamview/BUILD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +51,38 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gui/report" />
       <recent name="$PROJECT_DIR$/gui" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.check_report">
+    <configuration name="check_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_Client" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/check_report.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="choose_the_scene" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_Client" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_bazel_and_absl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_Client" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,12 +157,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/test_bazel_and_absl.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,10 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.check_report" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.scenario_run" />
         <item itemvalue="Python.choose_the_scene" />
-        <item itemvalue="Python.test_bazel_and_absl" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.scenario_run" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +199,9 @@
       <workItem from="1603110873228" duration="9629000" />
       <workItem from="1603121672859" duration="51000" />
       <workItem from="1603153016615" duration="10364000" />
-      <workItem from="1603177968877" duration="9972000" />
+      <workItem from="1603177968877" duration="12383000" />
+      <workItem from="1603240160864" duration="1760000" />
+      <workItem from="1603250170623" duration="4203000" />
     </task>
     <task id="LOCAL-00001" summary="测试bazel和absl-py库的正常使用">
       <created>1603079047294</created>
@@ -301,7 +336,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603192483959</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="增加了打开yaml异常处理">
+      <created>1603192514546</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603192514546</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更改BUILD">
+      <created>1603192533992</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603192533992</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,9 +374,10 @@
     <MESSAGE value="连接mongoDB数据库;保存获取的JSON到文件。" />
     <MESSAGE value="更新了配置文件" />
     <MESSAGE value="更改了agent.py:set_denstination" />
-    <MESSAGE value="更改BUILD" />
     <MESSAGE value="无关紧要" />
-    <option name="LAST_COMMIT_MESSAGE" value="无关紧要" />
+    <MESSAGE value="增加了打开yaml异常处理" />
+    <MESSAGE value="更改BUILD" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改BUILD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="78" key="#Notifications" timestamp="1603171068747">
@@ -346,54 +396,54 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="232" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1603192533826" />
-    <state width="691" height="466" key="DebuggerActiveHint" timestamp="1603177604895">
+    <state width="812" height="466" key="DebuggerActiveHint" timestamp="1603194062969">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="691" height="466" key="DebuggerActiveHint/0.23.1280.777@0.23.1280.777" timestamp="1603177604895" />
+    <state width="812" height="466" key="DebuggerActiveHint/0.23.1280.777@0.23.1280.777" timestamp="1603194062969" />
     <state x="499" y="316" width="509" height="297" key="Github.ShareDialog" timestamp="1603096766701">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="499" y="316" width="509" height="297" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1603096766701" />
-    <state width="1238" height="318" key="GridCell.Tab.0.bottom" timestamp="1603187699556">
+    <state width="1238" height="316" key="GridCell.Tab.0.bottom" timestamp="1603257899085">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="318" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1603187699556" />
-    <state width="1238" height="318" key="GridCell.Tab.0.center" timestamp="1603187699555">
+    <state width="1238" height="316" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1603257899085" />
+    <state width="1238" height="316" key="GridCell.Tab.0.center" timestamp="1603257899084">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="318" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1603187699555" />
-    <state width="1238" height="318" key="GridCell.Tab.0.left" timestamp="1603187699555">
+    <state width="1238" height="316" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1603257899084" />
+    <state width="1238" height="316" key="GridCell.Tab.0.left" timestamp="1603257899082">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="318" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1603187699555" />
-    <state width="1238" height="318" key="GridCell.Tab.0.right" timestamp="1603187699556">
+    <state width="1238" height="316" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1603257899082" />
+    <state width="1238" height="316" key="GridCell.Tab.0.right" timestamp="1603257899084">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="318" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1603187699556" />
-    <state width="1238" height="325" key="GridCell.Tab.1.bottom" timestamp="1603178302235">
+    <state width="1238" height="316" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1603257899084" />
+    <state width="1238" height="325" key="GridCell.Tab.1.bottom" timestamp="1603196810967">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="325" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1603178302235" />
-    <state width="1238" height="325" key="GridCell.Tab.1.center" timestamp="1603178302234">
+    <state width="1238" height="325" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1603196810967" />
+    <state width="1238" height="325" key="GridCell.Tab.1.center" timestamp="1603196810966">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="325" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1603178302234" />
-    <state width="1238" height="325" key="GridCell.Tab.1.left" timestamp="1603178302233">
+    <state width="1238" height="325" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1603196810966" />
+    <state width="1238" height="325" key="GridCell.Tab.1.left" timestamp="1603196810965">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="325" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1603178302233" />
-    <state width="1238" height="325" key="GridCell.Tab.1.right" timestamp="1603178302234">
+    <state width="1238" height="325" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1603196810965" />
+    <state width="1238" height="325" key="GridCell.Tab.1.right" timestamp="1603196810966">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="325" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1603178302234" />
+    <state width="1238" height="325" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1603196810966" />
     <state x="228" y="155" key="IDE.errors.dialog" timestamp="1603105927586">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="228" y="155" key="IDE.errors.dialog/0.23.1280.777@0.23.1280.777" timestamp="1603105927586" />
-    <state x="149" y="50" key="SettingsEditor" timestamp="1603121136310">
+    <state x="149" y="50" key="SettingsEditor" timestamp="1603250272294">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1603121136310" />
+    <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1603250272294" />
     <state x="240" y="153" key="Vcs.Push.Dialog.v2" timestamp="1603192535864">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -420,9 +470,11 @@
     <state x="296" y="211" key="git4idea.merge.GitPullDialog/0.23.1280.777@0.23.1280.777" timestamp="1603076149249" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_Client$choose_the_scene.coverage" NAME="choose_the_scene Coverage Results" MODIFIED="1603178119511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/python_Client$choose_the_scene.coverage" NAME="choose_the_scene Coverage Results" MODIFIED="1603194454057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/python_Client$check_report.coverage" NAME="check_report Coverage Results" MODIFIED="1603257886952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
     <SUITE FILE_PATH="coverage/python_Client$test_bazel_and_absl.coverage" NAME="test_bazel_and_absl Coverage Results" MODIFIED="1603153343090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
     <SUITE FILE_PATH="coverage/python_Client$scenario_run.coverage" NAME="scenario_run Coverage Results" MODIFIED="1603186171374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
-    <SUITE FILE_PATH="coverage/python_Client$main.coverage" NAME="main Coverage Results" MODIFIED="1603187112149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/python_Client$main.coverage" NAME="main Coverage Results" MODIFIED="1603248820152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/python_Client$test.coverage" NAME="test Coverage Results" MODIFIED="1603194451679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

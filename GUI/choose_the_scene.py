@@ -1,18 +1,18 @@
 import pymongo as mongo
 import yaml
 import json
-from gui.scenario_run import SimConnection
 
 
 def chooseTheScene(log):
     try:
         CONFIG_FILE_NAME = "../config.yaml"
-        config = yaml.load(open(CONFIG_FILE_NAME))
+        Loader = yaml.FullLoader
+        config = yaml.load(open(CONFIG_FILE_NAME), Loader=Loader)
     except:
         log.error("Loading configuration failed...")
         print("Loading configuration failed...")
 
-    log.info('Loading configuration')
+    log.info('Loading MongoDB configuration ...')
 
     host = config['configuration']['MongoDB']['host']
     port = config['configuration']['MongoDB']['port']
@@ -20,7 +20,7 @@ def chooseTheScene(log):
     collection = config['configuration']['MongoDB']['collection']
 
     client = mongo.MongoClient(host=host, port=port)
-    log.info('Configuration finished')
+    log.info('MongoDB Configuration finished !')
 
     collection = client.get_database(db).get_collection(collection)
     result = collection.find({},{"_id":1}).sort("_id",1)
@@ -44,10 +44,10 @@ def chooseTheScene(log):
             f.write(json.dumps(json_file[0]))
             f.close()
 
-        return SimConnection(address='')
+        return './json/'+scene_name['_id']+'.json'
 
     else:
-        print("Please check the scene number !")
+        print("The scene number is invalid, please check the scene number !")
         log.warning("The scene number is invalid !")
 
     pass

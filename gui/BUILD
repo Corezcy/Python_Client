@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 py_library(
   name = "logger",
   deps = [],
@@ -6,7 +8,7 @@ py_library(
 
 py_library(
   name = "scenario_run",
-  deps = [],
+  deps = ["//lgsvl:simulator"],
   srcs = ["scenario_run.py"],
 )
 
@@ -18,6 +20,8 @@ py_library(
 
 py_binary(
   name = "main",
-  deps = [":logger",":choose_the_scene"],
+  deps = [":logger",
+          ":choose_the_scene"
+          ],
   srcs = ["main.py"],
 )

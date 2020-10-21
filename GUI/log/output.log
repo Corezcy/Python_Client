@@ -5,3 +5,45 @@
 2020-10-20 17:45:18,661 - PyClient - absl - INFO - Please choose the scene
 2020-10-20 17:45:18,661 - PyClient - absl - INFO - Loading configuration
 2020-10-20 17:45:18,662 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:36:47,831 - PyClient - absl - INFO - Please choose the scene
+2020-10-20 19:36:47,833 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:36:47,835 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:39:11,315 - PyClient - absl - INFO - Please choose the scene
+2020-10-20 19:39:11,317 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:39:11,318 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:39:17,596 - PyClient - absl - INFO - Please choose the scene
+2020-10-20 19:39:17,603 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:39:17,607 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:39:31,584 - PyClient - absl - INFO - The scene [ 01.haha ] is choosed
+2020-10-20 19:39:31,599 - PyClient - absl - INFO - Please choose the scene
+2020-10-20 19:39:31,604 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:39:31,607 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:39:47,913 - PyClient - absl - INFO - Please choose the scene
+2020-10-20 19:39:50,761 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:39:50,774 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:40:00,306 - PyClient - absl - INFO - The scene [ 01.haha ] is choosed
+2020-10-20 19:40:18,114 - PyClient - absl - INFO - Please choose the scene
+2020-10-20 19:40:20,366 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:40:20,381 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:40:35,090 - PyClient - absl - INFO - The scene [ 01.haha ] is choosed
+2020-10-20 19:47:39,286 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:47:39,286 - PyClient - absl - INFO - Please choose the scene : 
+2020-10-20 19:47:39,290 - PyClient - absl - INFO - Configuration finished
+2020-10-20 19:50:36,251 - PyClient - absl - INFO - The scene [ 05.View ] is choosed
+2020-10-20 19:50:36,264 - PyClient - absl - INFO - Loading configuration
+2020-10-20 19:50:36,265 - PyClient - absl - INFO - Please choose the scene : 
+2020-10-20 19:50:36,266 - PyClient - absl - INFO - Configuration finished
+2020-10-21 10:53:42,796 - PyClient - absl - INFO - Loading MongoDB configuration ...
+2020-10-21 10:53:42,803 - PyClient - absl - INFO - MongoDB Configuration finished !
+2020-10-21 10:55:22,947 - PyClient - absl - INFO - The scene [ 01.haha ] is choosed
+2020-10-21 10:55:22,965 - PyClient - absl - INFO - Loading MongoDB configuration ...
+2020-10-21 10:55:22,966 - PyClient - absl - INFO - MongoDB Configuration finished !
+2020-10-21 10:55:25,067 - PyClient - absl - INFO - The scene [ 01.haha ] is choosed
+2020-10-21 10:55:25,081 - PyClient - absl - INFO - Loading MongoDB configuration ...
+2020-10-21 10:55:25,083 - PyClient - absl - INFO - MongoDB Configuration finished !
+2020-10-21 10:55:27,981 - PyClient - absl - INFO - The scene [ 01.haha ] is choosed
+2020-10-21 10:55:27,994 - PyClient - absl - INFO - Loading MongoDB configuration ...
+2020-10-21 10:55:27,996 - PyClient - absl - INFO - MongoDB Configuration finished !
+2020-10-21 10:55:29,790 - PyClient - absl - INFO - The scene [ 01.haha ] is choosed
+2020-10-21 10:55:29,810 - PyClient - absl - INFO - Loading MongoDB configuration ...
+2020-10-21 10:55:29,811 - PyClient - absl - INFO - MongoDB Configuration finished !
