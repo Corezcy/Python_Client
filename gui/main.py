@@ -32,20 +32,21 @@ def main(args):
     # choice = input("Please give your choice :")
     choice = FLAGS.int
     while choice != "4":
-        #选择场景
+        # 选择场景
         if choice == "1":
             path = chooseTheScene(log)
             simconnection.address = path
 
-        #开始仿真
+        # 开始仿真
         elif choice == "2":
             if simconnection.address != "":
-                startSimulation(log,simconnection)
+                startSimulation(log, simconnection)
             else:
                 print("Failed to choose the scene ... Please get back to step.1")
-                log.error("Failed to choose the scene ... Please get back to step.1")
+                log.error(
+                    "Failed to choose the scene ... Please get back to step.1")
 
-        #查勘报告
+        # 查勘报告
         elif choice == "3":
             checkReport(log)
 
@@ -58,5 +59,5 @@ def main(args):
 
 
 if __name__ == '__main__':
-    app.run(main,argv=['program_name', '--int=1'])
+    app.run(main, argv=['program_name', '--int=1'])
     # app.run(main)
