@@ -1,54 +1,66 @@
+load("@rules_python//python:defs.bzl", "py_library")
+load("@pip//:requirements.bzl", "requirement")
+
 package(default_visibility = ["//visibility:public"])
 
 py_library(
-  name = "geometry",
-  deps = [],
-  srcs = ["geometry.py"],
+    name = "geometry",
+    srcs = ["geometry.py"],
+    deps = [],
 )
 
 py_library(
-  name = "remote",
-  deps = [],
-  srcs = ["remote.py"],
+    name = "remote",
+    srcs = ["remote.py"],
+    deps = [
+        requirement("websockets"),
+        requirement("asyncio"),
+    ],
 )
 
 py_library(
-  name = "utils",
-  deps = [":geometry"],
-  srcs = ["utils.py"],
-)
-
-
-py_library(
-  name = "controllable",
-  deps = [":geometry",
-          ":utils"],
-  srcs = ["controllable.py"],
+    name = "utils",
+    srcs = ["utils.py"],
+    deps = [":geometry"],
 )
 
 py_library(
-  name = "sensor",
-  deps = [":geometry",
-          ":utils"],
-  srcs = ["sensor.py"],
+    name = "controllable",
+    srcs = ["controllable.py"],
+    deps = [
+        ":geometry",
+        ":utils",
+    ],
 )
 
 py_library(
-  name = "agent",
-  deps = [":geometry",
-          ":utils",
-          ":sensor"],
-  srcs = ["agent.py"],
+    name = "sensor",
+    srcs = ["sensor.py"],
+    deps = [
+        ":geometry",
+        ":utils",
+    ],
 )
 
 py_library(
-  name = "simulator",
-  deps = [":geometry",
-          ":utils",
-          ":sensor",
-          ":remote",
-          ":agent",
-          ":controllable"],
-  srcs = ["simulator.py"],
+    name = "agent",
+    srcs = ["agent.py"],
+    deps = [
+        ":geometry",
+        ":sensor",
+        ":utils",
+    ],
 )
 
+py_library(
+    name = "simulator",
+    srcs = ["simulator.py"],
+    deps = [
+        ":agent",
+        ":controllable",
+        ":geometry",
+        ":remote",
+        ":sensor",
+        ":utils",
+    ],
+)
