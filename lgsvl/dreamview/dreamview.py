@@ -1,48 +1,17 @@
-#
-
-# Copyright (c) 2019-2020 LG Electronics, Inc.
-
-#
-
-# This software contains code licensed as described in LICENSE.
-
-#
-
-
-
 from websocket import create_connection
-
 from enum import Enum
-
 import json
-
 import lgsvl
-
 import math
-
 import logging
-
 import sys
-
-
 
 log = logging.getLogger(__name__)
 
-
-
-
-
 class CoordType(Enum):
-
     Unity = 1
-
     Northing = 2
-
     Latitude = 3
-
-
-
-
 
 class Connection:
 
@@ -69,9 +38,6 @@ class Connection:
         self.ws = create_connection(self.url)
 
         self.gps_offset = lgsvl.Vector()
-
-
-
     def set_destination(self, x_long_east, z_lat_north, y=0, coord_type=CoordType.Unity):
 
         """
@@ -211,9 +177,6 @@ class Connection:
 
 
         return
-
-
-
     def enable_module(self, module):
 
         """
@@ -229,9 +192,6 @@ class Connection:
         )
 
         return
-
-
-
     def disable_module(self, module):
 
         """
@@ -247,8 +207,6 @@ class Connection:
         )
 
         return
-
-
 
     def set_hd_map(self, map):
 
@@ -303,8 +261,6 @@ class Connection:
             sys.exit(1)
 
         return
-
-
 
     def set_vehicle(self, vehicle, gps_offset_x=0.0, gps_offset_y=0.0, gps_offset_z=-1.348):
 
@@ -370,8 +326,6 @@ class Connection:
 
         return
 
-
-
     def set_setup_mode(self, mode):
 
         """
@@ -387,8 +341,6 @@ class Connection:
         )
 
         return
-
-
 
     def get_module_status(self):
 
@@ -434,8 +386,6 @@ class Connection:
 
         return data["data"]["modules"]
 
-
-
     def get_current_map(self):
 
         """
@@ -453,8 +403,6 @@ class Connection:
             data = json.loads(self.ws.recv())
 
         return data["data"]["currentMap"]
-
-
 
     def get_current_vehicle(self):
 
@@ -474,8 +422,6 @@ class Connection:
 
         return data["data"]["currentVehicle"]
 
-
-
     def reconnect(self):
 
         """
@@ -489,8 +435,6 @@ class Connection:
         self.ws = create_connection(self.url)
 
         return
-
-
 
     def enable_apollo(self, dest_x, dest_z, modules):
 
@@ -510,8 +454,6 @@ class Connection:
 
         self.set_destination(dest_x, dest_z)
 
-
-
     def disable_apollo(self):
 
         """
@@ -525,8 +467,6 @@ class Connection:
         for module in module_status.keys():
 
             self.disable_module(module)
-
-
 
     def check_module_status(self, modules):
 
@@ -547,8 +487,6 @@ class Connection:
                     "Warning: Apollo module {} is not running!!!".format(module)
 
                 )
-
-
 
     def setup_apollo(self, dest_x, dest_z, modules):
 
