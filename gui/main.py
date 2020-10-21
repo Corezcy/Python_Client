@@ -9,11 +9,6 @@ from start_simulation import startSimulation
 from logger import LoggerInstance
 from scenario_run import SimConnection
 
-# import choose_the_scene
-# import check_report
-# import start_simulation
-# import logger
-# import scenario_run
 
 log = LoggerInstance()
 

@@ -5,12 +5,13 @@ import json
 
 def chooseTheScene(log):
     try:
-        CONFIG_FILE_NAME = "../config.yaml"
+        CONFIG_FILE_NAME = "./config.yaml"
         Loader = yaml.FullLoader
         config = yaml.load(open(CONFIG_FILE_NAME), Loader=Loader)
     except:
         log.error("Loading configuration failed...")
         print("Loading configuration failed...")
+        return
 
     log.info('Loading MongoDB configuration ...')
 
@@ -40,11 +41,11 @@ def chooseTheScene(log):
 
         json_file = collection.find({"_id":scene_name['_id']})
 
-        with open( './json/'+scene_name['_id']+'.json', 'w') as f:
+        with open( './gui/json/'+scene_name['_id']+'.json', 'w') as f:
             f.write(json.dumps(json_file[0]))
             f.close()
 
-        return './json/'+scene_name['_id']+'.json'
+        return './gui/json/'+scene_name['_id']+'.json'
 
     else:
         print("The scene number is invalid, please check the scene number !")

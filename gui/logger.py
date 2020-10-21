@@ -11,23 +11,20 @@ class LoggerInstance():
         self.logger.setLevel(absl_logging.FATAL)
         # 控制日志输出到文件
 
-
-
         # logging_stream_handler = logging.StreamHandler()
         # formatter = logging.Formatter('%(asctime)s - %(message)s')
         # logging_stream_handler.setFormatter(formatter)
         # self.logger.addHandler(logging_stream_handler)
-
 
         '''
         bazel和python运行路径的区别:
         bazel以workspace文件为根目录
         python以main文件所在的文件夹为根目录
         '''
-        ## bazel目录
-        # file_handler_all = logging.FileHandler('./gui/log/output.log')
+        # bazel目录
+        file_handler_all = logging.FileHandler('./gui/log/output.log')
         # python run目录
-        file_handler_all = logging.FileHandler('./log/output.log')
+        # file_handler_all = logging.FileHandler('./log/output.log')
 
         file_handler_all.setLevel(absl_logging.DEBUG)
 

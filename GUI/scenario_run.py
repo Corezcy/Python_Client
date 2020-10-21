@@ -19,16 +19,17 @@ class TestException(Exception):
 
 # 定义基类
 class SimConnection:
-    def __init__(self, seconds=100, scene="BorregasAve", error_message=None, load_scene=True, address="",log=None):
+    def __init__(self, seconds=100, scene="BorregasAve", error_message=None, load_scene=True, address="", log=None):
         if error_message is None:
             error_message = 'test timed out after {}s.'.format(seconds)
         try:
-            CONFIG_FILE_NAME = "../config.yaml"
+            CONFIG_FILE_NAME = "./config.yaml"
             Loader = yaml.FullLoader
-            config = yaml.load(open(CONFIG_FILE_NAME),Loader=Loader)
+            config = yaml.load(open(CONFIG_FILE_NAME), Loader=Loader)
         except:
             log.error("Loading configuration failed...")
             print("Loading configuration failed...")
+            return
         self.seconds = seconds
         self.error_message = error_message
         self.scene = scene
@@ -45,7 +46,8 @@ class SimConnection:
         signal.signal(signal.SIGALRM, self.handle_timeout)
         signal.alarm(self.seconds)
         # 连接simulator
-        self.sim = lgsvl.Simulator(os.environ.get("SIMULATOR_HOST", self.host), self.port)
+        self.sim = lgsvl.Simulator(os.environ.get(
+            "SIMULATOR_HOST", self.host), self.port)
         # 读取场景数据
         with open(self.address, 'r', encoding='utf8') as data:
             data = json.load(data)
@@ -81,29 +83,38 @@ class SimConnection:
                 self.ped_ls = {}
                 self.ped_waypoints_ls = {}
                 if agent_type == 1:
-                    self.ego = self.sim.add_agent(agent_variant, lgsvl.AgentType.EGO, agent_state)
+                    self.ego = self.sim.add_agent(
+                        agent_variant, lgsvl.AgentType.EGO, agent_state)
                     self.ego.connect_bridge(self.host, self.port)
-                    dv = lgsvl.dreamview.Connection(self.sim, self.ego, self.host)
-                    dv.set_hd_map('Borregas Ave')  # 后续将Apollo端和LG端的地图名称统一后，这里可以传入json中的map_name
-                    dv.set_vehicle('Lincoln2017MKZ LGSVL')  # 需Apollo,lg两端统一后，才能从json传入，暂时先写死
+                    dv = lgsvl.dreamview.Connection(
+                        self.sim, self.ego, self.host)
+                    # 后续将Apollo端和LG端的地图名称统一后，这里可以传入json中的map_name
+                    dv.set_hd_map('Borregas Ave')
+                    # 需Apollo,lg两端统一后，才能从json传入，暂时先写死
+                    dv.set_vehicle('Lincoln2017MKZ LGSVL')
                     modules = []
                     modules = ['Localization', 'Transform', 'Routing', 'Prediction', 'Planning', 'Control',
                                'Storytelling']
-                    forward = lgsvl.utils.transform_to_forward(agent_state.transform)
-                    self.destination = agent_state.position + 200 * forward  # 目前拿到的json文件都没有ego车的目的点信息
+                    forward = lgsvl.utils.transform_to_forward(
+                        agent_state.transform)
+                    self.destination = agent_state.position + \
+                        200 * forward  # 目前拿到的json文件都没有ego车的目的点信息
                     # self.destination =
-                    dv.setup_apollo(self.destination.x, self.destination.z, modules)
+                    dv.setup_apollo(self.destination.x,
+                                    self.destination.z, modules)
 
                     # 发送目的点坐标给simulator
                     self.ego.destination_set(self.destination)
 
                 elif agent_type == 2:
-                    self.npc_i = self.sim.add_agent(agent_variant, lgsvl.AgentType.NPC, agent_state)
+                    self.npc_i = self.sim.add_agent(
+                        agent_variant, lgsvl.AgentType.NPC, agent_state)
                     self.npc_ls["npc_i"] = self.npc_i
                     self.npc_waypoints_ls["npc_i"] = waypoints
 
                 else:
-                    self.pedestrain_i = self.sim.add_agent(agent_variant, lgsvl.AgentType.PEDESTRIAN, agent_state)
+                    self.pedestrain_i = self.sim.add_agent(
+                        agent_variant, lgsvl.AgentType.PEDESTRIAN, agent_state)
                     self.ped_ls["pedestrain_i"] = self.pedestrain_i
                     self.ped_waypoints_ls["pedestrain_i"] = waypoints
 
@@ -136,6 +147,3 @@ class SimConnection:
         #   self.sim.remove_agent(a)
         # sim.remote.finish()  #使用代理连接simulator时需要加这行代码
         self.sim.close()
-
-
-
