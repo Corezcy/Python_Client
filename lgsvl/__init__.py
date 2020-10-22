@@ -4,11 +4,11 @@
 # This software contains code licensed as described in LICENSE.
 #
 
-from .geometry import Vector, BoundingBox, Transform
-from .simulator import Simulator, RaycastHit, WeatherState
-from .sensor import Sensor, CameraSensor, LidarSensor, ImuSensor
-from .agent import AgentType, AgentState, VehicleControl, Vehicle, EgoVehicle, NpcVehicle, Pedestrian, DriveWaypoint, WalkWaypoint, WaypointTrigger, TriggerEffector, NPCControl,Agent
-from .controllable import Controllable
-from .utils import ObjectState
+from geometry import Vector, BoundingBox, Transform
+from simulator import Simulator, RaycastHit, WeatherState
+from sensor import Sensor, CameraSensor, LidarSensor, ImuSensor
+from agent import AgentType, AgentState, VehicleControl, Vehicle, EgoVehicle, NpcVehicle, Pedestrian, DriveWaypoint, WalkWaypoint, WaypointTrigger, TriggerEffector, NPCControl, Agent
+from controllable import Controllable
+from utils import ObjectState
 
 import lgsvl.dreamview
