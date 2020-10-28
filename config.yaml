@@ -4,10 +4,16 @@ configuration:
         database: "mydb"
         #集合名
         collection: "test"
-        #被连接服务器的IP
-        host: "0.0.0.0"
+        #存储MongoDB数据库的服务器IP
+        host: "10.78.7.62"
         #端口，默认27017
         port: 27017
     Simulation:
-        host: "10.78.4.163"
-        port: "9192"
+        #lg host or proxy host
+        host: "192.168.2.12"
+        #lg port or proxy port
+        port: 8181
+        #apollo host
+        apollo_host: "192.168.2.12"
+        #apollo port
+        apollo_port: 9090

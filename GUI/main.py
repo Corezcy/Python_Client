@@ -3,59 +3,68 @@ from absl import app
 from absl import logging as absl_logging
 import logging
 
-from gui.choose_the_scene import chooseTheScene
-from gui.check_report import checkReport
-from gui.start_simulation import startSimulation
-from gui.logger import LoggerInstance
+from choose_the_scene import chooseTheScene
+from check_report import checkReport
+from start_simulation import startSimulation
+from logger import LoggerInstance
+from scenario_run import SimConnection
 
 
 log = LoggerInstance()
 
+
 FLAGS = flags.FLAGS
-flags.DEFINE_string("int", None, "choice")
+flags.DEFINE_integer("t", None, "simulation time limit")
+
+
+simconnection = SimConnection()
 
 
 def main(args):
 
+    # 终端是否显示log信息的关键.注释，不显示；不注释，显示。
     logging.root.removeHandler(absl_logging.get_absl_handler())
 
-    print("*---------Welcome to Pythonx  Client!----------*")
+    print("\n*---------Welcome to Python Client!----------*")
     print("|                 --Menu--                   |")
     print("|              1.Choose the Scene            |")
     print("|              2.Start Simulation            |")
     print("|              3.Check Report                |")
     print("|              4.Exit                        |")
-    print("*--------------------------------------------*")
-    choice = input("Please give your choice :")
-    # choice = FLAGS.int
+    print("*--------------------------------------------*\n")
+    choice = input("Please enter your option :")
+    print()
+    # choice = FLAGS.option
     while choice != "4":
+
+        # 选择场景
         if choice == "1":
-            '''
-            选择场景
-            '''
-            log.info("Please choose the scene")
-            chooseTheScene(log)
+            chooseTheScene(log, simconnection)
+
+        # 开始仿真
         elif choice == "2":
-            '''
-            开始仿真(加入暂停功能)
-            '''
-            log.info("Simulation is starting")
-            startSimulation(log)
-            log.info("Simulation is finished")
+            startSimulation(log, simconnection, FLAGS.t)
+
+        # 查勘报告
         elif choice == "3":
-            '''
-            查看报告
-            '''
-            log.info("Please check the report")
             checkReport(log)
+
         else:
-            log.warning("Invalid input")
+            log.warning("Invalid input !")
 
-        #choice = input("Please give your choice :")
+        print("\n*---------Welcome to Python Client!----------*")
+        print("|                 --Menu--                   |")
+        print("|              1.Choose the Scene            |")
+        print("|              2.Start Simulation            |")
+        print("|              3.Check Report                |")
+        print("|              4.Exit                        |")
+        print("*--------------------------------------------*\n")
+        choice = input("Please enter your option :")
+        print()
 
-    print("bye")
+    print("bye\n")
 
 
 if __name__ == '__main__':
-    # app.run(main,argv=['program_name', '--int=1'])
+    # app.run(main, argv=['program_name', '--option=1'])
     app.run(main)

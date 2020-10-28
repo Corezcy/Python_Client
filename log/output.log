@@ -1,0 +1,19 @@
+2020-10-28 14:59:22,068 - PyClient - absl - INFO - Loading MongoDB configuration ...
+2020-10-28 14:59:22,075 - PyClient - absl - INFO - MongoDB Configuration finished !
+2020-10-28 14:59:25,087 - PyClient - absl - INFO - The scene [ 01.haha ] is saved in /Users/core/Desktop/python_Client/gui/json/01.haha.json
+2020-10-28 14:59:25,088 - PyClient - absl - INFO - The scene [ 02.mongo ] is saved in /Users/core/Desktop/python_Client/gui/json/02.mongo.json
+2020-10-28 14:59:25,088 - PyClient - absl - INFO - The scene [ 03.Compass ] is saved in /Users/core/Desktop/python_Client/gui/json/03.Compass.json
+2020-10-28 14:59:25,089 - PyClient - absl - INFO - The scene [ 04.Window ] is saved in /Users/core/Desktop/python_Client/gui/json/04.Window.json
+2020-10-28 14:59:25,090 - PyClient - absl - INFO - The scene [ 05.View ] is saved in /Users/core/Desktop/python_Client/gui/json/05.View.json
+2020-10-28 14:59:25,090 - PyClient - absl - INFO - All scenes are downloaded
+2020-10-28 14:59:40,689 - PyClient - absl - INFO - 50
+2020-10-28 15:12:25,484 - PyClient - absl - INFO - Loading MongoDB configuration ...
+2020-10-28 15:12:25,491 - PyClient - absl - INFO - MongoDB Configuration finished !
+2020-10-28 15:12:32,144 - PyClient - absl - INFO - The scene [ 01.haha ] is saved in ./json/01.haha.json
+2020-10-28 15:12:32,144 - PyClient - absl - INFO - The scene [ 02.mongo ] is saved in ./json/02.mongo.json
+2020-10-28 15:12:32,145 - PyClient - absl - INFO - The scene [ 03.Compass ] is saved in ./json/03.Compass.json
+2020-10-28 15:12:32,145 - PyClient - absl - INFO - The scene [ 04.Window ] is saved in ./json/04.Window.json
+2020-10-28 15:12:32,146 - PyClient - absl - INFO - The scene [ 05.View ] is saved in ./json/05.View.json
+2020-10-28 15:12:32,146 - PyClient - absl - INFO - All scenes are downloaded
+2020-10-28 15:27:37,247 - PyClient - absl - INFO - 60
+2020-10-28 15:27:53,227 - PyClient - absl - WARNING - Address is NULL, please get back to stpe.1 to check or run all scenes

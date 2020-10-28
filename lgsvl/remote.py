@@ -9,81 +9,83 @@ import websockets
 import asyncio
 import json
 
+
 class Remote(threading.Thread):
 
-  def __init__(self, host, port):
-    super().__init__(daemon=True)
-    self.endpoint = "ws://{}:{}".format(host, port)
-    self.lock = threading.Lock()
-    self.cv = threading.Condition()
-    self.data = None
-    self.sem = threading.Semaphore(0)
-    self.running = True
-    self.start()
-    self.sem.acquire()
+    def __init__(self, host, port):
+        super().__init__(daemon=True)
+        self.endpoint = "ws://{}:{}".format(host, port)
+        self.lock = threading.Lock()
+        self.cv = threading.Condition()
+        self.data = None
+        self.sem = threading.Semaphore(0)
+        self.running = True
+        self.start()
+        self.sem.acquire()
 
-  def run(self):
-    self.loop = asyncio.new_event_loop()                
-    asyncio.set_event_loop(self.loop)
-    self.loop.run_until_complete(self.process())
+    def run(self):
+        self.loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(self.loop)
+        self.loop.run_until_complete(self.process())
 
-  def close(self):
-    asyncio.run_coroutine_threadsafe(self.websocket.close(), self.loop)
-    self.join()
-    self.loop.close()
+    def close(self):
+        asyncio.run_coroutine_threadsafe(self.websocket.close(), self.loop)
+        self.join()
+        self.loop.close()
 
-  async def process(self):
-    self.websocket = await websockets.connect(self.endpoint, compression=None)
-    self.sem.release()
+    async def process(self):
+        self.websocket = await websockets.connect(self.endpoint, compression=None)
+        self.sem.release()
 
-    while True:
-      try:
-        data = await self.websocket.recv()
-      except Exception as e:
-        if isinstance(e, websockets.exceptions.ConnectionClosed):
-          break
+        while True:
+            try:
+                data = await self.websocket.recv()
+            except Exception as e:
+                if isinstance(e, websockets.exceptions.ConnectionClosed):
+                    break
+                with self.cv:
+                    self.data = {"error": str(e)}
+                    self.cv.notify()
+                break
+            with self.cv:
+                self.data = json.loads(data)
+                self.cv.notify()
+
+        await self.websocket.close()
+
+    def command(self, name, args={}):
+        if not self.websocket:
+            raise Exception("Not connected")
+
+        data = json.dumps({"command": name, "arguments": args})
+
+        asyncio.run_coroutine_threadsafe(self.websocket.send(data), self.loop)
+
         with self.cv:
-          self.data = {"error": str(e)}
-          self.cv.notify()
-        break       
-      with self.cv:
-        self.data = json.loads(data)
-        self.cv.notify()
+            self.cv.wait_for(lambda: self.data is not None)
+            data = self.data
+            self.data = None
 
-    await self.websocket.close()
+        if "error" in data:
+            raise Exception(data["error"])
 
-  def command(self, name, args = {}):
-    if not self.websocket:
-      raise Exception("Not connected")
+        if "receive_error" in data:
+            raise Exception(data["receive_error"])
 
-    data = json.dumps({"command": name, "arguments": args})
-    asyncio.run_coroutine_threadsafe(self.websocket.send(data), self.loop)
+        return data["result"]
 
-    with self.cv:
-      self.cv.wait_for(lambda: self.data is not None)
-      data = self.data
-      self.data = None
+    def finish(self):
+        data = json.dumps({"action": "close"})
+        asyncio.run_coroutine_threadsafe(self.websocket.send(data), self.loop)
 
-    if "error" in data:
-      raise Exception(data["error"])
+        with self.cv:
+            self.cv.wait_for(lambda: self.data is not None)
+            data = self.data
+            self.data = None
 
-    if "receive_error" in data:
-      raise Exception(data["receive_error"])
+        if "receive_error" in data:
+            raise Exception(data["receive_error"])
 
-    return data["result"]
-
-  def finish(self):
-    data = json.dumps({"action":"close"})
-    asyncio.run_coroutine_threadsafe(self.websocket.send(data), self.loop)
-
-    with self.cv:
-      self.cv.wait_for(lambda: self.data is not None)
-      data = self.data
-      self.data = None
-
-    if "receive_error" in data:
-      raise Exception(data["receive_error"])
-
-    if data["action"] == "closed":
-      return
-    print( "closed ERROR!")
+        if data["action"] == "closed":
+            return
+        print("closed ERROR!")

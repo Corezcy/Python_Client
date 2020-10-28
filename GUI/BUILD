@@ -1,23 +1,42 @@
+load("@rules_python//python:defs.bzl", "py_binary", "py_library")
+# load("@pip//:requirements.bzl", "requirement")
+
+package(default_visibility = ["//visibility:public"])
+
 py_library(
-  name = "logger",
-  deps = [],
-  srcs = ["logger.py"],
+    name = "logger",
+    srcs = ["logger.py"],
+    # deps = [requirement("absl-py")],
 )
 
 py_library(
-  name = "scenario_run",
-  deps = [],
-  srcs = ["scenario_run.py"],
+    name = "scenario_run",
+    srcs = ["scenario_run.py"],
+    deps = [
+        "//lgsvl:simulator",
+        "//lgsvl:dreamview",
+        "//lgsvl:agent",
+        "//lgsvl:geometry",
+        # requirement("pyyaml"),
+    ],
 )
 
 py_library(
-  name = "choose_the_scene",
-  deps = [":scenario_run"],
-  srcs = ["choose_the_scene.py"],
+    name = "choose_the_scene",
+    srcs = ["choose_the_scene.py"],
+    deps = [
+        ":scenario_run",
+        # requirement("pymongo"),
+        # requirement("pyyaml"),
+    ],
 )
 
 py_binary(
-  name = "main",
-  deps = [":logger",":choose_the_scene"],
-  srcs = ["main.py"],
+    name = "main",
+    srcs = ["main.py"],
+    deps = [
+        ":choose_the_scene",
+        ":logger",
+        # requirement("absl-py"),
+    ],
 )
