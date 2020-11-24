@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+.DS_store
+*.log
+*.pyc
+.vscode/settings.json
+bazel-testlogs
+bazel-bin
+bazel-out
+bazel-python_Client
+report
+json
+.ijwb/.bazelproject

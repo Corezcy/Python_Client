@@ -1,0 +1,19 @@
+configuration:
+    MongoDB:
+        #数据库名
+        database: "sim_scenarios"
+        #集合名
+        collection: "BorregasAve"
+        #存储MongoDB数据库的服务器IP
+        host: "10.78.4.163"
+        #端口，默认27017
+        port: 27017
+    Simulation:
+        #lg host or proxy host
+        host: "10.78.4.163"
+        #lg port or proxy port
+        port: 8181
+        #apollo host
+        apollo_host: "10.78.4.163"
+        #apollo port
+        apollo_port: 9090
